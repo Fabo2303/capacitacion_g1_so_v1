@@ -1,6 +1,16 @@
 var textos = ["completar-1", "completar-2", "completar-3", "completar-4",
     "completar-5", "completar-6", "completar-7", "completar-8"];
 
+var videos = ["https://youtube.com/embed/_IqRKlauMlE",
+    "https://youtube.com/embed/21ACt0vtcfc",
+    "https://youtube.com/embed/l6d_k-ET1rY",
+    "https://youtube.com/embed/vsdVCCUBO3M",
+    "https://youtube.com/embed/sephHEM2Vz4",
+    "https://youtube.com/embed/aO3DhVyWaCY",
+    "https://youtube.com/embed/JslDvt6adJQ",
+    "https://youtube.com/embed/ja3frEx39Gg?"
+]
+
 function toggleContenidos2(id, box_id) {
     var elemento = document.getElementById(id);
     var box = document.getElementById(box_id);
@@ -15,7 +25,20 @@ function toggleContenidos2(id, box_id) {
     }
 }
 
+function changeVideo(id) {
+    var myTexto = document.getElementById(id).textContent;
+    var myVideo = document.getElementById('video');
+    for(var i = 0; i <textos.length; i++){
+        var texto = document.getElementById(textos[i]).textContent;
+        if(myTexto == texto){
+            break;
+        }
+    }
+    myVideo.src = videos[i];
+}
+
 function toggleComplete(id) {
+    changeVideo(id);
     var myTexto = document.getElementById(id);
     myTexto.textContent = "1/1 completado";
     myTexto.style.color = "blue";
@@ -50,7 +73,7 @@ function firmar(id, id2, id3) {
         Swal.fire({
             title: "¡Felicidades!",
             html: textField1 + " " + textField2 + ", felicidades por completar tu capacitación con éxito " +
-                "y obtener tu merecido certificado. Te deseamos un futuro profesional lleno de éxitos." + 
+                "y obtener tu merecido certificado. Te deseamos un futuro profesional lleno de éxitos." +
                 "<br>Atentamente, SecureShop Peru",
             icon: "success",
             confirmButtonText: "Aceptar",
