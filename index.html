@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capacitación SecureShop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="logo-secure-shop">
+        </a>
+        <nav class="nav-bar">
+            <a href="#" class="nav-link"><span class="material-symbols-outlined">
+                    home
+                </span></a>
+            <a href="#" class="nav-link"><span class="material-symbols-outlined">
+                    help
+                </span></a>
+            <a href="#" class="nav-link"><span class="material-symbols-outlined">
+                    account_circle
+                </span></a>
+        </nav>
+    </header>
+    <main>
+        <div class="welcome">
+            <img src="images/debian.png" alt="">
+            <p>Bienvenido a la capacitación de Debian</p>
+            <button id="certificado" onclick="toggleDatos('datos')">Generar Certificado</button>
+        </div>
+        <div class="family">
+            <div class="section certificado" id="datos">
+                <div class="textfield t1">
+                    <label for="nombre">Nombre:&nbsp;</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
+                </div>
+                <div class="textfield t2">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido">
+                </div>
+                <div class="textfield t3">
+                    <label for="correo">Correo:&nbsp;&nbsp;&nbsp;</label>
+                    <input type="text" id="correo" name="correo" placeholder="Escribe tu correo">
+                </div>
+                <button onclick="firmar('nombre', 'apellido', 'correo')">Firmar</button>
+            </div>
+        </div>
+
+        <!--Video de introducción de Linux-->
+        <div class="family">
+            <div class="section" id="cambiar-radius-1">
+                <div class="section-title">
+                    <h3>Introducción a Linux&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+                    <h5 id="completar-1">0/1 completado</h5>
+                </div>
+                <div class="desplegable" onclick="toggleContenidos2('contenido-oculto-1', 'cambiar-radius-1')">
+                    <span class="material-symbols-outlined">
+                        expand_more
+                    </span>
+                </div>
+            </div>
+
+            <div class="contenedor" id="contenido-oculto-1">
+                <div class="section-recurso">
+                    <div class="section-title">
+                        <h4>Video</h4>
+                    </div>
+                    <div class="simbol">
+                        <a href="https://youtu.be/_IqRKlauMlE" target="_blank"><span class="material-symbols-outlined"
+                                onclick="toggleComplete('completar-1')">
+                                play_circle
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Video de Instalación Debian-->
+        <div class="family">
+            <div class="section" id="cambiar-radius-2">
+                <div class="section-title">
+                    <h3>Instalación de Debian&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+                    <h5 id="completar-2">0/1 completado</h5>
+                </div>
+                <div class="desplegable" onclick="toggleContenidos2('contenido-oculto-2', 'cambiar-radius-2')">
+                    <span class="material-symbols-outlined">
+                        expand_more
+                    </span>
+                </div>
+            </div>
+
+            <div class="contenedor" id="contenido-oculto-2">
+
+                <div class="section-recurso">
+                    <div class="section-title">
+                        <h4>Video</h4>
+                    </div>
+                    <div class="simbol">
+                        <a href="https://youtu.be/21ACt0vtcfc" target="_blank"><span class="material-symbols-outlined"
+                                onclick="toggleComplete('completar-2')">
+                                play_circle
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Video de Navegacion dentro del entorno-->
+        <div class="family">
+            <div class="section" id="cambiar-radius-3">
+                <div class="section-title">
+                    <h3>Navegación inicial&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+                    <h5 id="completar-3">0/1 completado</h5>
+                </div>
+                <div class="desplegable" onclick="toggleContenidos2('contenido-oculto-3', 'cambiar-radius-3')">
+                    <span class="material-symbols-outlined">
+                        expand_more
+                    </span>
+                </div>
+            </div>
+
+            <div class="contenedor" id="contenido-oculto-3">
+
+                <div class="section-recurso">
+                    <div class="section-title">
+                        <h4>Video</h4>
+                    </div>
+                    <div class="simbol">
+                        <a href="https://youtu.be/l6d_k-ET1rY" target="_blank"><span class="material-symbols-outlined"
+                                onclick="toggleComplete('completar-3')">
+                                play_circle
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Video de aplicaciones criticas-->
+        <div class="family">
+            <div class="section" id="cambiar-radius-4">
+                <div class="section-title">
+                    <h3>Aplicaciones críticas&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+                    <h5 id="completar-4">0/1 completado</h5>
+                </div>
+                <div class="desplegable" onclick="toggleContenidos2('contenido-oculto-4', 'cambiar-radius-4')">
+                    <span class="material-symbols-outlined">
+                        expand_more
+                    </span>
+                </div>
+            </div>
+
+            <div class="contenedor" id="contenido-oculto-4">
+
+                <div class="section-recurso">
+                    <div class="section-title">
+                        <h4>Video</h4>
+                    </div>
+                    <div class="simbol">
+                        <a href="https://youtu.be/vsdVCCUBO3M" target="_blank"><span class="material-symbols-outlined"
+                                onclick="toggleComplete('completar-4')">
+                                play_circle
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Video de aplicaciones alternativas-->
+        <div class="family">
+            <div class="section" id="cambiar-radius-5">
+                <div class="section-title">
+                    <h3>Aplicaciones alternativas</h3>
+                    <h5 id="completar-5">0/1 completado</h5>
+                </div>
+                <div class="desplegable" onclick="toggleContenidos2('contenido-oculto-5', 'cambiar-radius-5')">
+                    <span class="material-symbols-outlined">
+                        expand_more
+                    </span>
+                </div>
+            </div>
+
+            <div class="contenedor" id="contenido-oculto-5">
+
+                <div class="section-recurso">
+                    <div class="section-title">
+                        <h4>Video</h4>
+                    </div>
+                    <div class="simbol">
+                        <a href="https://youtu.be/sephHEM2Vz4" target="_blank"><span class="material-symbols-outlined"
+                                onclick="toggleComplete('completar-5')">
+                                play_circle
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Video de Backup y restauración de Backup-->
+        <div class="family">
+            <div class="section" id="cambiar-radius-6">
+                <div class="section-title">
+                    <h3>Respaldar
+                        datos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </h3>
+                    <h5 id="completar-6">0/1 completado</h5>
+                </div>
+                <div class="desplegable" onclick="toggleContenidos2('contenido-oculto-6', 'cambiar-radius-6')">
+                    <span class="material-symbols-outlined">
+                        expand_more
+                    </span>
+                </div>
+            </div>
+
+            <div class="contenedor" id="contenido-oculto-6">
+
+                <div class="section-recurso">
+                    <div class="section-title">
+                        <h4>Video</h4>
+                    </div>
+                    <div class="simbol">
+                        <a href="https://youtu.be/aO3DhVyWaCY" target="_blank"><span class="material-symbols-outlined"
+                                onclick="toggleComplete('completar-6')">
+                                play_circle
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Video de administracion de usuarios-->
+        <div class="family">
+            <div class="section" id="cambiar-radius-7">
+                <div class="section-title">
+                    <h3>Manejo de usuarios&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+                    <h5 id="completar-7">0/1 completado</h5>
+                </div>
+                <div class="desplegable" onclick="toggleContenidos2('contenido-oculto-7', 'cambiar-radius-7')">
+                    <span class="material-symbols-outlined">
+                        expand_more
+                    </span>
+                </div>
+            </div>
+
+            <div class="contenedor" id="contenido-oculto-7">
+
+                <div class="section-recurso">
+                    <div class="section-title">
+                        <h4>Video</h4>
+                    </div>
+                    <div class="simbol">
+                        <a href="https://youtu.be/JslDvt6adJQ" target="_blank"><span class="material-symbols-outlined"
+                                onclick="toggleComplete('completar-7')">
+                                play_circle
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Video de Seguridad en Debian-->
+        <div class="family">
+            <div class="section" id="cambiar-radius-8">
+                <div class="section-title">
+                    <h3>Seguridad en Debian&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+                    <h5 id="completar-8">0/1 completado</h5>
+                </div>
+                <div class="desplegable" onclick="toggleContenidos2('contenido-oculto-8', 'cambiar-radius-8')">
+                    <span class="material-symbols-outlined">
+                        expand_more
+                    </span>
+                </div>
+            </div>
+
+            <div class="contenedor" id="contenido-oculto-8">
+
+                <div class="section-recurso">
+                    <div class="section-title">
+                        <h4>Video</h4>
+                    </div>
+                    <div class="simbol">
+                        <a href="https://youtu.be/ja3frEx39Gg" target="_blank"><span class="material-symbols-outlined"
+                                onclick="toggleComplete('completar-8')">
+                                play_circle
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
