@@ -1,0 +1,50 @@
+[
+    {
+        "title": "Introducción a Debian",
+        "lessons": "1",
+        "description": "En este curso aprenderás a instalar y configurar Debian, uno de los sistemas operativos más populares en el mundo de los servidores.",
+        "url": "https://platzi.com/cursos/debian/"
+    },
+    {
+        "title": "Instalación de Debian",
+        "lessons": "1",
+        "description": "En este curso aprenderás a instalar Debian, uno de los sistemas operativos más populares en el mundo de los servidores.",
+        "url": "https://platzi.com/cursos/debian-instalacion/"
+    },
+    {
+        "title": "Navegación inicial",
+        "lessons": "1",
+        "description": "En este curso aprenderás a navegar por Debian, uno de los sistemas operativos más populares en el mundo de los servidores.",
+        "url": "https://platzi.com/cursos/debian-navegacion/"
+    },
+    {
+        "title": "Aplicaciones críticas",
+        "lessons": "1",
+        "description": "En este curso aprenderás a instalar y configurar aplicaciones críticas en Debian, uno de los sistemas operativos más populares en el mundo de los servidores.",
+        "url": "https://platzi.com/cursos/debian-aplicaciones/"
+    },
+    {
+        "title": "Aplicaciones Alternativas",
+        "lessons": "1",
+        "description": "En este curso aprenderás a instalar y configurar aplicaciones alternativas en Debian, uno de los sistemas operativos más populares en el mundo de los servidores.",
+        "url": "https://platzi.com/cursos/debian-alternativas/"
+    },
+    {
+        "title": "Respaldar datos",
+        "lessons": "1",
+        "description": "En este curso aprenderás a respaldar datos en Debian, uno de los sistemas operativos más populares en el mundo de los servidores.",
+        "url": "https://platzi.com/cursos/debian-respaldo/"
+    },
+    {
+        "title": "Manejo de usuarios",
+        "lessons": "1",
+        "description": "En este curso aprenderás a manejar usuarios en Debian, uno de los sistemas operativos más populares en el mundo de los servidores.",
+        "url": "https://platzi.com/cursos/debian-usuarios/"
+    },
+    {
+        "title": "Seguridad en Debian",
+        "lessons": "1",
+        "description": "En este curso aprenderás a configurar la seguridad en Debian, uno de los sistemas operativos más populares en el mundo de los servidores.",
+        "url": "https://platzi.com/cursos/debian-seguridad/"
+    }
+]
