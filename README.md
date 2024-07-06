@@ -9,3 +9,6 @@ Se aplicó:
 
 - WebComponents
 - Importación de archivos JSON
+
+## Enlace a la página web
+[Capacitación de Debian](https://fabo2303.github.io/capacitacion_g1_so_v1/)
